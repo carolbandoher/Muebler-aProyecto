@@ -1,0 +1,193 @@
+CRITICAL - 2024-09-12 20:13:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "head.php"
+[Method: GET, Route: Clientes]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('head.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('head', [], true)
+ 3 APPPATH\Controllers\ClienteC.php(11): view('head')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:16:43 --> ErrorException: Undefined variable $clientes
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:17:09 --> ErrorException: Undefined variable $clientes
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 24.
+ 1 APPPATH\Views\Clientes\Show.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:18:24 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:26:15 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:27:20 --> ErrorException: Undefined variable $data
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:27:36 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:28:03 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:28:05 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:28:05 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:28:05 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:28:09 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-12 20:28:10 --> ErrorException: Undefined variable $cli
+[Method: GET, Route: Clientes]
+in APPPATH\Views\Clientes\Show.php on line 4.
+ 1 APPPATH\Views\Clientes\Show.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cli', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/Show', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(13): view('Clientes/Show')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')

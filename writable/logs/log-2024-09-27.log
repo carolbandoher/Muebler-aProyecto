@@ -1,0 +1,78 @@
+INFO - 2024-09-27 07:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-27 07:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-27 08:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-27 09:20:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-27 09:21:28 --> ErrorException: Undefined array key "telefonoProveedor"
+[Method: POST, Route: Compras/insert]
+in APPPATH\Controllers\CompraC.php on line 111.
+ 1 APPPATH\Controllers\CompraC.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "telefonoProveedor"', 'C:\\xampp2\\htdocs\\muebleria\\app\\Controllers\\CompraC.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-27 09:22:16 --> Error: Call to a member function insert() on null
+[Method: POST, Route: Compras/insert]
+in APPPATH\Controllers\CompraC.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-09-27 09:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-27 09:22:38 --> Error: Call to a member function insert() on null
+[Method: POST, Route: Compras/insert]
+in APPPATH\Controllers\CompraC.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-27 09:25:20 --> Error: Call to a member function insert() on null
+[Method: POST, Route: Compras/insert]
+in APPPATH\Controllers\CompraC.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-27 09:25:32 --> Error: Call to a member function insert() on null
+[Method: POST, Route: Compras/insert]
+in APPPATH\Controllers\CompraC.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-09-27 09:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-27 09:25:36 --> Error: Call to a member function insert() on null
+[Method: POST, Route: Compras/insert]
+in APPPATH\Controllers\CompraC.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-27 09:26:50 --> Error: Call to a member function insert() on null
+[Method: POST, Route: Compras/insert]
+in APPPATH\Controllers\CompraC.php on line 130.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-09-27 19:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,309 @@
+CRITICAL - 2024-10-07 05:33:43 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:34:06 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:36:57 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:37:00 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:38:07 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:42:19 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:44:53 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:45:53 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:46:01 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:48:48 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:51:13 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 05:58:05 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 15:49:26 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:32:22 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:33:26 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:33:36 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:34:49 --> ErrorException: Undefined variable $data
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 17.
+ 1 APPPATH\Controllers\VentasEmpC.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp2\\htdocs\\muebleria\\app\\Controllers\\VentasEmpC.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:35:36 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:36:34 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:38:28 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-10-07 18:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-07 18:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-07 18:43:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-07 18:45:17 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:46:50 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: Ventas2]
+in APPPATH\Controllers\VentaC.php on line 148.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentaC->index2()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentaC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-10-07 18:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-07 18:48:46 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-10-07 18:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-07 18:49:43 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->kipi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:50:39 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->kipi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:51:52 --> Error: Value of type null is not callable
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->kipi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-10-07 18:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-07 18:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-07 18:52:36 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->kipi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:57:05 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->kipi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-10-07 18:57:07 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->kipi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-10-07 18:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-07 19:03:26 --> Error: Call to a member function findAll() on null
+[Method: GET, Route: VentasEmp]
+in APPPATH\Controllers\VentasEmpC.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentasEmpC->kipi()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentasEmpC))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp2\\htdocs\\muebleria\\public\\index.php')

@@ -1,0 +1,404 @@
+INFO - 2024-09-25 00:50:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 00:54:23 --> ErrorException: Undefined property: stdClass::$cliente
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cliente', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 00:59:42 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:01:19 --> ErrorException: Undefined property: stdClass::$cliente
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cliente', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:01:33 --> ErrorException: Attempt to read property "idCliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idCliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:01:39 --> ErrorException: Attempt to read property "idCliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idCliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:02:59 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:04:06 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:04:20 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:04:25 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:07:43 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:17:13 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:18:51 --> ErrorException: Attempt to read property "nombreCliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nombreCliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:34:40 --> ErrorException: Attempt to read property "cliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "cliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-09-25 01:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 01:41:28 --> ErrorException: Undefined property: stdClass::$cliente
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 9.
+ 1 APPPATH\Views\Clientes\Edit.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$cliente', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:43:05 --> ErrorException: Attempt to read property "idCliente" on string
+[Method: GET, Route: Clientes/Edit/4]
+in APPPATH\Views\Clientes\Edit.php on line 11.
+ 1 APPPATH\Views\Clientes\Edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "idCliente" on string', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Clientes\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Clientes/edit', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(38): view('Clientes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:48:43 --> ErrorException: Undefined array key "idCliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:49:27 --> ErrorException: Undefined variable $idCliente
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 32.
+ 1 APPPATH\Controllers\ClienteC.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idCliente', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:50:53 --> ErrorException: Undefined array key "idcliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idcliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:51:14 --> ErrorException: Undefined array key "idCliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:52:29 --> ErrorException: Undefined array key "idCliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:53:48 --> ErrorException: Undefined array key "idCliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:54:17 --> ErrorException: Undefined array key "idCliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:54:34 --> ErrorException: Undefined array key "idcliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idcliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 01:56:58 --> ErrorException: Undefined array key "idCliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 02:01:24 --> ErrorException: Undefined array key "cliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 02:02:06 --> ErrorException: Undefined array key "idCliente"
+[Method: POST, Route: Clientes/update/]
+in APPPATH\Controllers\ClienteC.php on line 25.
+ 1 APPPATH\Controllers\ClienteC.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idCliente"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\ClienteC.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->update('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-09-25 02:02:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 02:41:45 --> ErrorException: Undefined array key "nombreUsuario"
+[Method: POST, Route: Usuario/acceder]
+in APPPATH\Controllers\UsuarioC.php on line 16.
+ 1 APPPATH\Controllers\UsuarioC.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreUsuario"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\UsuarioC.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->acceder()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 02:43:09 --> ErrorException: Undefined array key "nombreUsuario"
+[Method: POST, Route: Usuario/acceder]
+in APPPATH\Controllers\UsuarioC.php on line 16.
+ 1 APPPATH\Controllers\UsuarioC.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreUsuario"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\UsuarioC.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->acceder()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-09-25 02:43:29 --> ErrorException: Undefined array key "nombreUsuario"
+[Method: POST, Route: Usuario/acceder]
+in APPPATH\Controllers\UsuarioC.php on line 16.
+ 1 APPPATH\Controllers\UsuarioC.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreUsuario"', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\UsuarioC.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->acceder()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-09-25 02:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 02:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 02:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 02:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 03:03:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 03:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-25 04:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-25 04:21:26 --> ErrorException: Undefined variable $nombre
+[Method: GET, Route: Clientes]
+in APPPATH\Views\menu.php on line 40.
+ 1 APPPATH\Views\menu.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombre', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\menu.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\menu.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('menu', [], true)
+ 5 APPPATH\Controllers\ClienteC.php(17): view('menu')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
