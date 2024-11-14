@@ -6,6 +6,7 @@ class PrincipalC extends BaseController
 {
     public function Front()
     {
-        return view('/front/Principal');
+        return view('/front/Principal').
+        view('/footer');
     }
 }

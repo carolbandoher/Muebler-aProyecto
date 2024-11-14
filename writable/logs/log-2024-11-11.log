@@ -1,0 +1,1087 @@
+CRITICAL - 2024-11-11 00:07:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/VentasEmp/footer.php"
+[Method: GET, Route: front/Principal]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/VentasEmp/footer.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('/VentasEmp/footer', [], true)
+ 3 APPPATH\Controllers\PrincipalC.php(10): view('/VentasEmp/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrincipalC->Front()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrincipalC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:07:57 --> ParseError: syntax error, unexpected token ",", expecting ";"
+[Method: GET, Route: front/Principal]
+in APPPATH\Controllers\PrincipalC.php on line 9.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\PrincipalC.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PrincipalC')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PrincipalC')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\PrincipalC', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 00:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 00:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 00:35:38 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 00:35:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:35:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:35:38\', \'2024-11-11 00:35:38\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:35:38\', \'2024-11-11 00:35:38\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:35:38 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:35:38\', \'2024-11-11 00:35:38\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:35:38\', \'2024-11-11 00:35:38\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:35:38\', \'2024-11-11 00:35:38\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 00:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 00:36:34 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 00:36:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:36:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:36:34\', \'2024-11-11 00:36:34\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:36:34\', \'2024-11-11 00:36:34\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:36:34 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:36:34\', \'2024-11-11 00:36:34\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:36:34\', \'2024-11-11 00:36:34\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:36:34\', \'2024-11-11 00:36:34\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 00:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 00:37:14 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 00:37:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:37:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:14\', \'2024-11-11 00:37:14\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:14\', \'2024-11-11 00:37:14\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:37:14 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:14\', \'2024-11-11 00:37:14\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:14\', \'2024-11-11 00:37:14\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:14\', \'2024-11-11 00:37:14\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 00:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 00:37:37 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 00:37:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:37:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:37\', \'2024-11-11 00:37:37\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:37\', \'2024-11-11 00:37:37\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:37:37 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:37\', \'2024-11-11 00:37:37\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:37\', \'2024-11-11 00:37:37\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:37:37\', \'2024-11-11 00:37:37\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+ERROR - 2024-11-11 00:39:12 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 00:39:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:39:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:39:12\', \'2024-11-11 00:39:12\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:39:12\', \'2024-11-11 00:39:12\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 00:39:12 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:39:12\', \'2024-11-11 00:39:12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:39:12\', \'2024-11-11 00:39:12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 00:39:12\', \'2024-11-11 00:39:12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 14:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 14:07:30 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 14:07:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 14:07:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 14:07:30\', \'2024-11-11 14:07:30\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 14:07:30\', \'2024-11-11 14:07:30\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 14:07:30 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 14:07:30\', \'2024-11-11 14:07:30\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 14:07:30\', \'2024-11-11 14:07:30\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-14\', \'28732873\', \'2024-12-14\', \'2024-11-11 14:07:30\', \'2024-11-11 14:07:30\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 14:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 15:51:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 15:51:48 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Cl...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cl...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cl...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cl...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\ClienteC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 15:51:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+[Method: POST, Route: Clientes/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 15:51:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:51:48\', \'2024-11-11 15:51:48\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:51:48\', \'2024-11-11 15:51:48\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 15:51:48 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:51:48\', \'2024-11-11 15:51:48\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:51:48\', \'2024-11-11 15:51:48\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:51:48\', \'2024-11-11 15:51:48\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 15:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 15:52:27 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Cl...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cl...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cl...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cl...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\ClienteC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 15:52:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+[Method: POST, Route: Clientes/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 15:52:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:52:27\', \'2024-11-11 15:52:27\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:52:27\', \'2024-11-11 15:52:27\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 15:52:27 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:52:27\', \'2024-11-11 15:52:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:52:27\', \'2024-11-11 15:52:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'gwetw\', \'wtetwet\', \'73857\', \'2024-12-04\', \'2121212212\', \'2024-11-11 15:52:27\', \'2024-11-11 15:52:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 15:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 15:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 16:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 16:02:36 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Cl...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cl...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cl...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cl...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\ClienteC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 16:02:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+[Method: POST, Route: Clientes/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 16:02:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'piki\', \'sus\', \'73857\', \'2024-08-14\', \'8326782323\', \'2024-11-11 16:02:36\', \'2024-11-11 16:02:36\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'piki\', \'sus\', \'73857\', \'2024-08-14\', \'8326782323\', \'2024-11-11 16:02:36\', \'2024-11-11 16:02:36\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 16:02:36 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'piki\', \'sus\', \'73857\', \'2024-08-14\', \'8326782323\', \'2024-11-11 16:02:36\', \'2024-11-11 16:02:36\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'piki\', \'sus\', \'73857\', \'2024-08-14\', \'8326782323\', \'2024-11-11 16:02:36\', \'2024-11-11 16:02:36\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (\'piki\', \'sus\', \'73857\', \'2024-08-14\', \'8326782323\', \'2024-11-11 16:02:36\', \'2024-11-11 16:02:36\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Cliente` (`nombreCliente`, `apellidoCliente`, `codigoPostal`, `fechaRegistro`, `telefonoCliente`, `created_at`, `updated_at`) VALUES (:nombreCliente:, :apellidoCliente:, :codigoPostal:, :fechaRegistro:, :telefonoCliente:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\ClienteC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 19:20:11 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'muebleria', 3306, '', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\muebleria\app\Controllers\ClienteC.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\muebleria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\muebleria\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\muebleria\app\Controllers\ClienteC.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+#7 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-11-11 19:20:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+[Method: GET, Route: Clientes]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Cliente`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ClienteC.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ClienteC->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ClienteC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 19:20:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Muebles/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\MueblesC.php(142): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MueblesC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MueblesC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:21:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Muebles/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\MueblesC.php(142): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MueblesC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MueblesC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:32:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Muebles/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\MueblesC.php(142): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MueblesC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MueblesC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:32:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Muebles/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\MueblesC.php(142): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MueblesC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MueblesC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 19:38:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Ventas/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\VentaC.php(142): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VentaC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VentaC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:42:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Compras/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\CompraC.php(140): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:42:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Compras/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\CompraC.php(140): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CompraC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CompraC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:43:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 19:43:33 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 19:43:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:43:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:43:33\', \'2024-11-11 19:43:33\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:43:33\', \'2024-11-11 19:43:33\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:43:33 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:43:33\', \'2024-11-11 19:43:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:43:33\', \'2024-11-11 19:43:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:43:33\', \'2024-11-11 19:43:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 19:44:04 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 19:44:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:44:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:44:04\', \'2024-11-11 19:44:04\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:44:04\', \'2024-11-11 19:44:04\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:44:04 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:44:04\', \'2024-11-11 19:44:04\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:44:04\', \'2024-11-11 19:44:04\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexo\', \'2024-11-06\', \'345453\', \'2024-11-14\', \'2024-11-11 19:44:04\', \'2024-11-11 19:44:04\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 19:51:23 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 19:51:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:51:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexossssss\', \'2024-11-21\', \'28732873\', \'2024-10-30\', \'2024-11-11 19:51:23\', \'2024-11-11 19:51:23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexossssss\', \'2024-11-21\', \'28732873\', \'2024-10-30\', \'2024-11-11 19:51:23\', \'2024-11-11 19:51:23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:51:23 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexossssss\', \'2024-11-21\', \'28732873\', \'2024-10-30\', \'2024-11-11 19:51:23\', \'2024-11-11 19:51:23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexossssss\', \'2024-11-21\', \'28732873\', \'2024-10-30\', \'2024-11-11 19:51:23\', \'2024-11-11 19:51:23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'juan sex\', \'sexossssss\', \'2024-11-21\', \'28732873\', \'2024-10-30\', \'2024-11-11 19:51:23\', \'2024-11-11 19:51:23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 19:53:07 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Em...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\muebleria\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\muebleria\app\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+#10 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-11-11 19:53:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: Empleados/insert]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:53:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'sdffsfese\', \'fsefsef\', \'2024-10-24\', \'28732873\', \'2024-09-04\', \'2024-11-11 19:53:07\', \'2024-11-11 19:53:07\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'sdffsfese\', \'fsefsef\', \'2024-10-24\', \'28732873\', \'2024-09-04\', \'2024-11-11 19:53:07\', \'2024-11-11 19:53:07\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-11 19:53:07 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'sdffsfese\', \'fsefsef\', \'2024-10-24\', \'28732873\', \'2024-09-04\', \'2024-11-11 19:53:07\', \'2024-11-11 19:53:07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'sdffsfese\', \'fsefsef\', \'2024-10-24\', \'28732873\', \'2024-09-04\', \'2024-11-11 19:53:07\', \'2024-11-11 19:53:07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (\'sdffsfese\', \'fsefsef\', \'2024-10-24\', \'28732873\', \'2024-09-04\', \'2024-11-11 19:53:07\', \'2024-11-11 19:53:07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Empleado` (`nombreEmpleado`, `apellidoEmpleado`, `fechaREmpleado`, `telefonoEmpleado`, `fechaSEmpleado`, `created_at`, `updated_at`) VALUES (:nombreEmpleado:, :apellidoEmpleado:, :fechaREmpleado:, :telefonoEmpleado:, :fechaSEmpleado:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\EmpleadoC.php(132): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EmpleadoC->insert()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmpleadoC))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 19:56:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: GET, Route: Proveedores/delete/0]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2814.
+ 1 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\ProveedorC.php(140): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProveedorC->delete('0')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProveedorC))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-11 19:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

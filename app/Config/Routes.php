@@ -72,9 +72,7 @@ $routes->post('/Compras/update/','CompraC::update/');
 
 //Rutas ventas Empleado
 
-$routes->get('/VentasEmp','VentasEmpC::Kipi');
-$routes->get('/VentasEmp/Add','VentasEmpC::add');
-$routes->post('/VentasEmp/insert','VentasEmpC::insert');
+
 
 //Rutas front
 

@@ -11,7 +11,7 @@ class EmpleadoM extends Model
     protected $primaryKey       = 'idEmpleado';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $useSoftDeletes   = false;
+    protected $useSoftDeletes   = true;
     protected $protectFields    = true;
     protected $allowedFields    = ['nombreEmpleado','apellidoEmpleado','fechaREmpleado','telefonoEmpleado','fechaSEmpleado'];
 
