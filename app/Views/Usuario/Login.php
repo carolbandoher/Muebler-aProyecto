@@ -9,7 +9,7 @@
             margin: 0;
             height: 100vh;
             display: flex;
-            justify-content: flex-end; /* Alinea el contenido a la derecha */
+            justify-content: flex-end; 
             align-items: center;
             background: url('https://img.freepik.com/fotos-premium/hogar-decoracion-muebles-diseno-interiores-sala-estar-fondo-pared-blanca_221619-1030.jpg') no-repeat center center fixed; /* Cambia esta URL por la de tu fondo */
             background-size: cover;
@@ -17,13 +17,13 @@
             color: #333;
         }
         .container {
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y transparente */
-            padding: 20px; /* Cambia el padding para un diseño más compacto */
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 20px; 
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            color: white; /* Color del texto */
-            width: 300px; /* Establece un ancho fijo para el contenedor */
-            margin-right: 100px; /* Espacio desde el borde derecho */
+            color: white; 
+            width: 300px; 
+            margin-right: 100px; 
         }
         input[type="text"], input[type="password"], input[type="submit"] {
             width: 100%;
@@ -46,7 +46,6 @@
             background-color: #388E3C;
         }
 
-        /* Diseño moderno adicional */
         h1 {
             text-align: center;
             color: #f5f5f5;
@@ -81,7 +80,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Iniciar Sesión</h1> <!-- Título añadido -->
+        <h1>Iniciar Sesión</h1>
         <div class="row">
             <div class="col">
                 <form action="<?=base_url('Usuario/acceder'); ?>" method="POST">

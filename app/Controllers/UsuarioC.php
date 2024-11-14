@@ -8,8 +8,7 @@ class UsuarioC extends Controller{
    public function index(){
     return  view('head').
             
-     view('Usuario/login').
-     view('footer');
+     view('Usuario/login');
    }
 
    public function acceder(){
