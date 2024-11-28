@@ -56,7 +56,7 @@
 <div class="row">
     <div class="col">
         <h1>Datos </h1>
-        <a href="<?=base_url('Clientes/Add/');?> " class="btn btn-success">Agregar</a>
+        <a href="<?=base_url('Administrador/Add/');?> " class="btn btn-success">Agregar</a>
     </div>
 </div>
     <div class="row">
@@ -65,39 +65,37 @@
             <table class="table table-striped">
                 <thead>
                     <th>
-                        nombre 
+                    nombreUsuario 
                     </th>
                     <th>
-                        apellido
+                    apellidoPaterno
                     </th>
                     <th>
-                        Codigo postal
+                    apellidoMaterno
                     </th>
                     <th>
-                        fecha de registro
-                    </th>
+                    telefono                    </th>
                     <th>
-                        telefono del cliente
-                    </th>
+                    correo                    </th>
                 </thead>
                 <tbody>
-                <?php foreach($cli as $J) :?>
+                <?php foreach($usu as $J) :?>
                     <tr>
                         
-                        <td><?=$J->nombreCliente; ?></td>
-                        <td><?=$J->apellidoCliente; ?></td>
-                        <td><?=$J->codigoPostal; ?></td>
-                        <td><?=$J->fechaRegistro; ?></td>
-                        <td><?=$J->telefonoCliente; ?></td>
+                        <td><?=$J->nombreUsuario; ?></td>
+                        <td><?=$J->apellidoPaterno; ?></td>
+                        <td><?=$J->apellidoMaterno; ?></td>
+                        <td><?=$J->telefono; ?></td>
+                        <td><?=$J->correo; ?></td>
 
 
 
                         <td>
-                        <a href="<?= base_url('Clientes/delete/'.$J->idCliente); ?>" class="btn btn-danger" 
-                        onclick="return confirm('¿Estás seguro de que deseas eliminar este cliente?');">Borrar</a>
+                        <a href="<?= base_url('Administrador/delete/'.$J->idUsuario); ?>" class="btn btn-danger" 
+                        onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">Borrar</a>
 
-                        <a href="<?=base_url('Clientes/Edit/'.$J->idCliente);?> " class="btn btn-warning"
-                        onclick="return confirm('¿Estás seguro de que deseas editar la información de este cliente?');">Modificar</a>
+                        <a href="<?=base_url('Administrador/Edit/'.$J->idUsuario);?> " class="btn btn-warning"
+                        onclick="return confirm('¿Estás seguro de que deseas editar la información de este usuario?');">Modificar</a>
                             
                         </td>
                     </tr>

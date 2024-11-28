@@ -79,3 +79,10 @@ $routes->post('/Compras/update/','CompraC::update/');
 $routes->get('/front/Principal', 'PrincipalC::Front');
 
 
+$routes->get('/Administrador','UsuarioC::index2');
+$routes->get('/Administrador/Add','UsuarioC::add');
+$routes->post('/Administrador/insert','UsuarioC::insert');
+$routes->get('/Administrador/delete/(:num)','UsuarioC::delete/$1');
+
+$routes->get('/Administrador/Edit/(:num)','UsuarioC::Edit/$1');
+$routes->post('/Administrador/update/','UsuarioC::update/');

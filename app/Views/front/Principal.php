@@ -32,6 +32,7 @@
             <h1>Decora tu hogar a tu estilo</h1>
             <p>Personaliza tu espacio al mejor precio</p>
             <img src="<?= base_url('images/sofaaaaa-removebg-preview.png') ?>" alt="Sofá" class="sofa-img">
+            <img src="" alt="">
         </section>
     </main>
 </body>
