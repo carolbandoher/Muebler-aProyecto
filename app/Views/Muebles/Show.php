@@ -27,10 +27,10 @@
                         <td><?=$J->categoriaMueble; ?></td>
                         <td>
                             <a href="<?= base_url('Muebles/delete/'.$J->idMueble); ?>" class="btn btn-danger" 
-                               onclick="return confirm('¿Estás seguro de que deseas eliminar este cliente?');">Borrar</a>
+                               onclick="return confirm('¿Estás seguro de que deseas eliminar este mueble?');">Borrar</a>
 
                             <a href="<?=base_url('Muebles/Edit/'.$J->idMueble);?>" class="btn btn-warning"
-                               onclick="return confirm('¿Estás seguro de que deseas editar la información de este cliente?');">Modificar</a>
+                               onclick="return confirm('¿Estás seguro de que deseas editar la información de este mueble?');">Modificar</a>
                         </td>
                     </tr>
                     <?php endforeach ?>

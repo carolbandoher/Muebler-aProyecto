@@ -12,7 +12,7 @@ class VentaC extends BaseController
 
         $ventaM = model('VentaM');
         $data['Ven'] = $ventaM->findAll();
-        return view('head') .
+        return 
                view('menu') .
                view('Ventas/Show', $data) .
                view('footer');
@@ -37,7 +37,7 @@ class VentaC extends BaseController
         $clienteM = model('ClienteM');
         $data['cliente'] = $clienteM->findAll();
 
-        return view('head') .
+        return 
                view('menu', $data1) .
                view('marcas/show', $data) .
                view('footer');
@@ -67,7 +67,7 @@ class VentaC extends BaseController
     {
         $this->checkAccess([0, 1]); // Admin (0) y empleado (1) pueden agregar ventas
 
-        return view('head') .
+        return 
                view('menu') .
                view('Ventas/Add') .
                view('footer');
@@ -81,7 +81,7 @@ class VentaC extends BaseController
         $data['idVenta'] = $idVenta;
         $data['Ven'] = $ventaM->where('idVenta', $idVenta)->findAll();
 
-        return view('head') .
+        return 
                view('menu') .
                view('Ventas/Edit', $data) .
                view('footer');
@@ -112,7 +112,7 @@ class VentaC extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            return view('head') .
+            return 
                    view('menu') .
                    view('Ventas/Add', ['validation' => $this->validator]) .
                    view('footer');

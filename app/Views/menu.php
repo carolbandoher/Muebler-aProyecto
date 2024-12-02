@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encabezado - Mueblería</title>
   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <style>
    
         body {
@@ -159,13 +161,11 @@
                 </a>
             </div>
 
-            <!-- Iconos de usuario -->
+         
             <div class="user-icons">
-                <a href="#"><i class="fa fa-lock"></i> login</a>
-                <div class="user-avatar">
-                    <img src="ruta/a/imagen_usuario.jpg" alt="Avatar de usuario">
-                </div>
-                <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                <a href="/Usuario"><i class="fa fa-lock"></i> login</a>
+                
+                <a href="/pagina/verCarrito"><i class="fa fa-shopping-cart"></i></a>
             </div>
         </div>
     </header>
@@ -175,20 +175,21 @@
         <div class="nav-container">
             <!-- Enlaces de navegación -->
             <div class="nav-links">
-                <a href="#"><i class="fa fa-home"></i> Inicio</a>
-                <a href="#">Catálogos ▼</a>
-                <a href="#">Categorías ▼</a>
+                <a href="/front/Principal"><i class="fa fa-home"></i> Inicio</a>
+                <a href="/Acerca">Acerca de nosotros</a>
+                <a href="/pagina">Productos</a>
             </div>
             
-            <!-- Barra de búsqueda -->
-            <div class="search-bar">
-                <i class="fa fa-search"></i>
-                <input type="text" placeholder="Buscar...">
-            </div>
+          
+<div class="search-bar">
+    <form action="<?= base_url('busqueda') ?>" method="get">
+        <i class="fa fa-search"></i>
+        <input type="text" name="query" placeholder="Buscar..." value="<?= isset($query) ? esc($query) : '' ?>">
+    </form>
+</div>
         </div>
     </div>
 
-    <!-- Font Awesome para los iconos -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </body>

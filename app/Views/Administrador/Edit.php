@@ -47,40 +47,54 @@
 
         <h2>Actualizar Cliente</h2>
         
-    <form action="<?=base_url('Clientes/update/'); ?>" method="POST">
+    <form action="<?=base_url('Administrador/update/'); ?>" method="POST">
         <div class="mb-3">
-            <label for="nombreCliente" class="form-label">Nombre</label>
-            <input name="nombreCliente" type="text" value="<?=$cliente[0]->nombreCliente; ?>"
-                 class="form-control" id="cliente" placeholder="Inserta tu nombre">
-           <input type="hidden" name="idCliente" value="<?=$cliente[0]->idCliente;?>" >
+            <label for="nombreUsuario" class="form-label">nombre Usuario</label>
+            <input name="nombreUsuario" type="text" value="<?=$usua[0]->nombreUsuario; ?>"
+                 class="form-control" id="usuario" placeholder="Inserta el nombre de usuario">
+           <input type="hidden" name="idUsuario" value="<?=$usua[0]->idUsuario;?>" >
         </div>
 
         <div class="mb-3">
-            <label for="apellidoCliente" class="form-label">Apellidos</label>
-            <input name="apellidoCliente" type="text" value="<?=$cliente[0]->apellidoCliente; ?>"
-                 class="form-control" id="cliente" placeholder="Inserta tu apellido">
-           <input type="hidden" name="idCliente" value="<?=$cliente[0]->idCliente;?>" >
+            <label for="apellidoPaterno" class="form-label">Apellido paterno</label>
+            <input name="apellidoPaterno" type="text" value="<?=$usua[0]->apellidoPaterno; ?>"
+                 class="form-control" id="usuario" placeholder="Inserta tu apellido paterno">
+           <input type="hidden" name="idUsuario" value="<?=$usua[0]->idUsuario;?>" >
         </div>
 
         <div class="mb-3">
-            <label for="codigoPostal" class="form-label">Código postal</label>
-            <input name="codigoPostal" type="text" value="<?=$cliente[0]->codigoPostal; ?>"
-                 class="form-control" id="cliente" placeholder="Inserta tu código postal">
-           <input type="hidden" name="idCliente" value="<?=$cliente[0]->idCliente;?>" >
+            <label for="apellidoMaterno" class="form-label">Apellido materno</label>
+            <input name="apellidoMaterno" type="text" value="<?=$usua[0]->apellidoMaterno; ?>"
+                 class="form-control" id="usuario" placeholder="Inserta tu apellido materno">
+           <input type="hidden" name="idUsuario" value="<?=$usua[0]->idUsuario;?>" >
         </div>
 
         <div class="mb-3">
-            <label for="fechaRegistro" class="form-label">Fecha del registro</label>
-            <input name="fechaRegistro" type="date" value="<?=$cliente[0]->fechaRegistro; ?>"
-                 class="form-control" id="cliente" placeholder="Inserta tu fecha de registro">
-           <input type="hidden" name="idCliente" value="<?=$cliente[0]->idCliente;?>" >
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input name="telefono" type="tel" value="<?=$usua[0]->telefono; ?>"
+                 class="form-control" id="usuario" placeholder="Inserta tu telefono">
+           <input type="hidden" name="idUsuario" value="<?=$usua[0]->idUsuario;?>" >
         </div>
 
         <div class="mb-3">
-            <label for="telefonoCliente" class="form-label">Teléfono del cliente</label>
-            <input name="telefonoCliente" type="Tel" value="<?=$cliente[0]->telefonoCliente; ?>"
-                 class="form-control" id="cliente" placeholder="Inserta tu teléfono del cliente">
-           <input type="hidden" name="idCliente" value="<?=$cliente[0]->idCliente;?>" >
+            <label for="correo" class="form-label">Correo</label>
+            <input name="correo" type="email" value="<?=$usua[0]->correo; ?>"
+                 class="form-control" id="usuario" placeholder="Inserta un correo">
+           <input type="hidden" name="idUsuario" value="<?=$usua[0]->idUsuario;?>" >
+        </div>
+
+        <div class="mb-3">
+            <label for="rol" class="form-label">Rol</label>
+            <input name="rol" type="num" value="<?=$usua[0]->rol; ?>"
+                 class="form-control" id="usuario" placeholder="Inserta el rol">
+           <input type="hidden" name="idUsuario" value="<?=$usua[0]->idUsuario;?>" >
+        </div>
+
+        <div class="mb-3">
+            <label for="pass" class="form-label">Contraseña</label>
+            <input name="pass" type="num" value="<?=$usua[0]->pass; ?>"
+                 class="form-control" id="usuario" placeholder="Inserta una contraseña">
+           <input type="hidden" name="idUsuario" value="<?=$usua[0]->idUsuario;?>" >
         </div>
 
         

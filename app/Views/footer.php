@@ -161,15 +161,16 @@
                 <h3>Trabajos recientes</h3>
                 <p><strong>Octubre 19, 2024</strong></p>
                 <p>Esta fue nuestra última entrega del día, realizada con éxito en una zona residencial. La cama estaba completamente empaquetada para transportar muebles de manera segura.</p>
-                <img src="ruta/a/la/imagen.jpg" alt="Imagen de trabajo reciente">
+                
+                <img src="<?= base_url('images/Entrega.jpg') ?>" alt="Imagen de trabajo reciente" class="logo">
             </div>
         </div>
 
 
         <div class="footer-nav">
-            <a href="#">Inicio</a>
-            <a href="#">Catálogos</a>
-            <a href="#">Categorías</a>
+            <a href="front/Principal">Inicio</a>
+            <a href="/Acerca">Acerca de nosotros</a>
+            <a href="/pagina">Productos</a>
         </div>
 
         <div class="social-icons">

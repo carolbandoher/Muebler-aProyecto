@@ -38,4 +38,12 @@ class MueblesM extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function buscarMuebles($query)
+    {
+        return $this->like('nombreMueble', $query)
+                    ->orLike('descripcionM')
+                    ->findAll();
+    }
+
 }

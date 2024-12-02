@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,53 +7,66 @@
     <style>
         body {
             margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: flex-end; 
-            align-items: center;
-            background: url('https://img.freepik.com/fotos-premium/hogar-decoracion-muebles-diseno-interiores-sala-estar-fondo-pared-blanca_221619-1030.jpg') no-repeat center center fixed; /* Cambia esta URL por la de tu fondo */
-            background-size: cover;
+            padding: 0;
             font-family: 'Arial', sans-serif;
-            color: #333;
+            background-color: #f4f4f4; /* Fondo neutro */
+            color: #333; /* Texto oscuro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
         .container {
-            background-color: rgba(0, 0, 0, 0.7); 
-            padding: 20px; 
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-            color: white; 
-            width: 300px; 
-            margin-right: 100px; 
-        }
-        input[type="text"], input[type="password"], input[type="submit"] {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-        }
-        input[type="text"], input[type="password"] {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        input[type="submit"]:hover {
-            background-color: #388E3C;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco */
+            border: 1px solid #ddd; /* Borde sutil */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+            display: flex;
+            flex-direction: column; /* Asegura que los elementos estén en columna */
+            justify-content: space-between;
+            height: auto;
         }
 
         h1 {
+            font-size: 1.8em;
+            color: #555; /* Color intermedio */
             text-align: center;
-            color: #f5f5f5;
-            font-family: 'Helvetica Neue', sans-serif;
-            font-size: 2em;
-            font-weight: 300;
-            letter-spacing: 1px;
             margin-bottom: 20px;
+        }
+
+        input[type="text"], 
+        input[type="password"], 
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px 15px; /* Espaciado interior uniforme */
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box; /* Asegura que el padding no desborde */
+        }
+
+        input[type="text"]::placeholder, 
+        input[type="password"]::placeholder {
+            color: #aaa; /* Color de los placeholders */
+            font-size: 0.95em; /* Tamaño ligeramente más pequeño */
+            line-height: 1.5; /* Ajusta el espaciado vertical */
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF; /* Azul */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Azul oscuro */
         }
 
         form {
@@ -61,35 +74,23 @@
             flex-direction: column;
         }
 
-        .container input[type="submit"] {
-            background-color: #3b3bff;
-            border: none;
-            border-radius: 20px;
-            font-size: 1em;
-            padding: 10px;
-            margin-top: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: background 0.3s, box-shadow 0.3s;
-        }
-
-        .container input[type="submit"]:hover {
-            background-color: #5050ff;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Iniciar Sesión</h1>
-        <div class="row">
-            <div class="col">
-                <form action="<?=base_url('Usuario/acceder'); ?>" method="POST">
-                    <input type="text" name="nombreUsuario" placeholder="Nombre de Usuario" required>
-                    <input type="password" name="pass" placeholder="Contraseña" required>
-                    <input type="submit" value="Acceder">
-                </form>
-            </div>
-        </div>
+        <form action="<?= base_url('Usuario/acceder'); ?>" method="POST">
+            <input type="text" name="nombreUsuario" placeholder="Nombre de Usuario" required>
+            <input type="password" name="pass" placeholder="Contraseña" required>
+            <input type="submit" value="Acceder">
+        </form>
+        <div class="footer">© 2024 - Mueblería</div>
     </div>
 </body>
 </html>

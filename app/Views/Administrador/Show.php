@@ -74,9 +74,17 @@
                     apellidoMaterno
                     </th>
                     <th>
-                    telefono                    </th>
+                    telefono                    
+                    </th>
                     <th>
-                    correo                    </th>
+                    correo                    
+                    </th>
+                    <th>
+                    rol                    
+                    </th>
+                    <th>
+                    contraseña                    
+                    </th>
                 </thead>
                 <tbody>
                 <?php foreach($usu as $J) :?>
@@ -87,6 +95,8 @@
                         <td><?=$J->apellidoMaterno; ?></td>
                         <td><?=$J->telefono; ?></td>
                         <td><?=$J->correo; ?></td>
+                        <td><?=$J->rol; ?></td>
+                        <td><?=$J->pass; ?></td>
 
 
 

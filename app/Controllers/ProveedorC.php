@@ -13,7 +13,7 @@ class ProveedorC extends BaseController
     {
         $proveedorM = model('ProveedorM');
         $data['Pro'] = $proveedorM->findAll();
-        return view('head') .
+        return 
         view ('menu') .
         view ('Proveedores/Show' ,$data) .
         view ('footer');
@@ -42,7 +42,7 @@ class ProveedorC extends BaseController
 
         $clienteM = model('ClienteM');
         $data['cliente'] = $clienteM->findAll();
-        return view('head') .
+        return 
                 view('menu',$data1) . 
                 view('marcas/show', $data) .
                 view('footer');
@@ -72,7 +72,7 @@ class ProveedorC extends BaseController
     
     public function add(){
 
-    return view('head') . 
+    return  
     view ('menu') . 
     view ('Proveedores/Add') . 
     view ('footer');
@@ -83,7 +83,7 @@ class ProveedorC extends BaseController
         $idProveedor = $data['idProveedor'] = $idProveedor;
         $proveedorM = model('ProveedorM');
         $data['Pro'] = $proveedorM->where('idProveedor',$idProveedor)->findAll();
-        return view('head') .
+        return 
         view('menu') . 
         view('Proveedores/Edit',$data) .
         view('footer');
@@ -118,7 +118,7 @@ class ProveedorC extends BaseController
             if (! $this->validate($rules)) {
                 // Si la validación falla, vuelve a cargar la vista con los errores
                 return     
-                view('head') .
+              
                 view('menu') . 
                 view('Proveedores/Add',[
                     'validation' => $this->validator

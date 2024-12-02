@@ -13,7 +13,7 @@ class CompraC extends BaseController
     {
         $compraM = model('CompraM');
         $data['Com'] = $compraM->findAll();
-        return view('head') .
+        return 
         view ('menu') .
         view ('Compras/Show' ,$data) .
         view ('footer');
@@ -72,7 +72,7 @@ class CompraC extends BaseController
     
     public function add(){
 
-    return view('head') . 
+    return 
     view ('menu') . 
     view ('Compras/Add') . 
     view ('footer');
@@ -83,7 +83,7 @@ class CompraC extends BaseController
         $idCompra = $data['idCompra'] = $idCompra;
         $compraM = model('CompraM');
         $data['Com'] = $compraM->where('idCompra',$idCompra)->findAll();
-        return view('head') .
+        return 
         view('menu') . 
         view('Compras/Edit',$data) .
         view('footer');
@@ -118,7 +118,7 @@ class CompraC extends BaseController
             if (! $this->validate($rules)) {
                 // Si la validación falla, vuelve a cargar la vista con los errores
                 return     
-                view('head') .
+         
                 view('menu') . 
                 view('Compras/Add',[
                     'validation' => $this->validator

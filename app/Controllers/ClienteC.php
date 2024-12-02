@@ -13,7 +13,7 @@ class ClienteC extends BaseController
     {
         $clienteM = model('ClienteM');
         $data['cli'] = $clienteM->findAll();
-        return view('head') .
+        return 
         view ('menu') .
         view ('Clientes/Show' ,$data) .
         view ('footer');
@@ -42,7 +42,7 @@ class ClienteC extends BaseController
 
         $clienteM = model('ClienteM');
         $data['cliente'] = $clienteM->findAll();
-        return view('head') .
+        return 
                 view('menu',$data1) . 
                 view('marcas/show', $data) .
                 view('footer');
@@ -72,7 +72,7 @@ class ClienteC extends BaseController
     
     public function add(){
 
-    return view('head') . 
+    return 
     view ('menu') . 
     view ('Clientes/Add') . 
     view ('footer');
@@ -83,7 +83,7 @@ class ClienteC extends BaseController
         $idCliente = $data['idCliente'] = $idCliente;
         $clienteM = model('ClienteM');
         $data['cliente'] = $clienteM->where('idCliente',$idCliente)->findAll();
-        return view('head') .
+        return 
         view('menu') . 
         view('Clientes/Edit',$data) .
         view('footer');
@@ -120,7 +120,7 @@ class ClienteC extends BaseController
             if (! $this->validate($rules)) {
                 // Si la validación falla, vuelve a cargar la vista con los errores
                 return     
-                view('head') .
+              
                 view('menu') . 
                 view('Clientes/Add',[
                     'validation' => $this->validator

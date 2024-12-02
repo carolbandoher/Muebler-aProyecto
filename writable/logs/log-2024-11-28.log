@@ -58,3 +58,753 @@ INFO - 2024-11-28 04:32:28 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-11-28 04:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-28 04:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-11-28 04:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-28 05:01:58 --> mysqli_sql_exception: Unknown column 'idUsurio' in 'where clause' in C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\muebleria\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\muebleria\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\muebleria\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\muebleria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\muebleria\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\muebleria\app\Controllers\UsuarioC.php(113): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+#8 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+#9 C:\xampp\htdocs\muebleria\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\muebleria\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\muebleria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\muebleria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\muebleria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-11-28 05:01:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idUsurio' in 'where clause'
+[Method: GET, Route: Administrador/Edit/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = :idUsurio:
+AND `Usuario`.`deleted_at` IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\UsuarioC.php(113): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 05:01:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'idUsurio' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = \'4\'
+AND `Usuario`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = \'4\'
+AND `Usuario`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = :idUsurio:
+AND `Usuario`.`deleted_at` IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\UsuarioC.php(113): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 05:01:58 --> [Caused by] mysqli_sql_exception: Unknown column 'idUsurio' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = \'4\'
+AND `Usuario`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = \'4\'
+AND `Usuario`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = \'4\'
+AND `Usuario`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `Usuario`
+WHERE `idUsurio` = :idUsurio:
+AND `Usuario`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\UsuarioC.php(113): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 05:03:29 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: Administrador/Edit/4]
+in APPPATH\Views\Administrador\Edit.php on line 53.
+ 1 APPPATH\Views\Administrador\Edit.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php', 53)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Administrador/Edit', [], true)
+ 5 APPPATH\Controllers\UsuarioC.php(116): view('Administrador/Edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 05:07:33 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: Administrador/Edit/4]
+in APPPATH\Views\Administrador\Edit.php on line 55.
+ 1 APPPATH\Views\Administrador\Edit.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Administrador/Edit', [], true)
+ 5 APPPATH\Controllers\UsuarioC.php(116): view('Administrador/Edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 05:08:21 --> ErrorException: Undefined property: stdClass::$apellidoCliente
+[Method: GET, Route: Administrador/Edit/4]
+in APPPATH\Views\Administrador\Edit.php on line 60.
+ 1 APPPATH\Views\Administrador\Edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$apellidoCliente', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Administrador/Edit', [], true)
+ 5 APPPATH\Controllers\UsuarioC.php(116): view('Administrador/Edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 05:08:40 --> ErrorException: Undefined property: stdClass::$apellidoUsuario
+[Method: GET, Route: Administrador/Edit/4]
+in APPPATH\Views\Administrador\Edit.php on line 60.
+ 1 APPPATH\Views\Administrador\Edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$apellidoUsuario', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Administrador/Edit', [], true)
+ 5 APPPATH\Controllers\UsuarioC.php(116): view('Administrador/Edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->Edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 05:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:18:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 05:20:24 --> ErrorException: Undefined property: stdClass::$contraseña
+[Method: GET, Route: Administrador]
+in APPPATH\Views\Administrador\Show.php on line 91.
+ 1 APPPATH\Views\Administrador\Show.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$contraseña', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Show.php', 91)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\Administrador\\Show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('Administrador/Show', [], true)
+ 5 APPPATH\Controllers\UsuarioC.php(25): view('Administrador/Show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioC->index2()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioC))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 05:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:20:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:30:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:33:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:51:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 05:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:19:51 --> ErrorException: Undefined property: stdClass::$nombre
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\listaProductos.php on line 5.
+ 1 APPPATH\Views\pagina\listaProductos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/listaProductos', [], true)
+ 5 APPPATH\Controllers\Categoria.php(20): view('pagina/listaProductos')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:19:51 --> ErrorException: Undefined property: stdClass::$nombre
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\listaProductos.php on line 5.
+ 1 APPPATH\Views\pagina\listaProductos.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/listaProductos', [], true)
+ 5 APPPATH\Controllers\Categoria.php(20): view('pagina/listaProductos')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:20:31 --> ErrorException: Undefined property: stdClass::$descripcion
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\listaProductos.php on line 7.
+ 1 APPPATH\Views\pagina\listaProductos.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$descripcion', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/listaProductos', [], true)
+ 5 APPPATH\Controllers\Categoria.php(20): view('pagina/listaProductos')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:21:09 --> ErrorException: Undefined property: stdClass::$idProducto
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\listaProductos.php on line 8.
+ 1 APPPATH\Views\pagina\listaProductos.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idProducto', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/listaProductos', [], true)
+ 5 APPPATH\Controllers\Categoria.php(20): view('pagina/listaProductos')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:21:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:26:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "VentasEmp/menu.php"
+[Method: GET, Route: pagina]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('VentasEmp/menu.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('VentasEmp/menu', [], true)
+ 3 APPPATH\Controllers\Categoria.php(19): view('VentasEmp/menu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:31:08 --> ErrorException: Undefined property: stdClass::$nombre
+[Method: GET, Route: pagina/producto/3]
+in APPPATH\Views\pagina\detalleProducto.php on line 7.
+ 1 APPPATH\Views\pagina\detalleProducto.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Categoria.php(34): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Producto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:31:16 --> ErrorException: Undefined property: stdClass::$nombre
+[Method: GET, Route: pagina/producto/3]
+in APPPATH\Views\pagina\detalleProducto.php on line 7.
+ 1 APPPATH\Views\pagina\detalleProducto.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombre', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Categoria.php(34): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Producto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:31:39 --> ErrorException: Undefined property: stdClass::$nombreM
+[Method: GET, Route: pagina/producto/3]
+in APPPATH\Views\pagina\detalleProducto.php on line 7.
+ 1 APPPATH\Views\pagina\detalleProducto.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nombreM', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Categoria.php(34): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Producto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:31:58 --> ErrorException: Undefined property: stdClass::$descripcion
+[Method: GET, Route: pagina/producto/3]
+in APPPATH\Views\pagina\detalleProducto.php on line 17.
+ 1 APPPATH\Views\pagina\detalleProducto.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$descripcion', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Categoria.php(34): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Producto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:32:10 --> ErrorException: Undefined property: stdClass::$precio
+[Method: GET, Route: pagina/producto/3]
+in APPPATH\Views\pagina\detalleProducto.php on line 18.
+ 1 APPPATH\Views\pagina\detalleProducto.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$precio', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Categoria.php(34): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Producto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:32:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:32:27 --> ErrorException: Undefined property: stdClass::$stock
+[Method: GET, Route: pagina/producto/3]
+in APPPATH\Views\pagina\detalleProducto.php on line 23.
+ 1 APPPATH\Views\pagina\detalleProducto.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$stock', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Categoria.php(34): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Producto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:32:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:32:57 --> ErrorException: Undefined property: stdClass::$idProducto
+[Method: GET, Route: pagina/producto/3]
+in APPPATH\Views\pagina\detalleProducto.php on line 26.
+ 1 APPPATH\Views\pagina\detalleProducto.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$idProducto', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\detalleProducto.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/detalleProducto', [], true)
+ 5 APPPATH\Controllers\Categoria.php(34): view('pagina/detalleProducto')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Producto('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:38:48 --> ErrorException: Undefined variable $nombreMueble
+[Method: POST, Route: pagina/insertCarrito]
+in APPPATH\Controllers\Categoria.php on line 85.
+ 1 APPPATH\Controllers\Categoria.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombreMueble', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\Categoria.php', 85)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->insertCarrito()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:39:29 --> ErrorException: Undefined variable $idProducto
+[Method: POST, Route: pagina/insertCarrito]
+in APPPATH\Controllers\Categoria.php on line 91.
+ 1 APPPATH\Controllers\Categoria.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idProducto', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\Categoria.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->insertCarrito()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:39:52 --> ErrorException: Undefined variable $idProducto
+[Method: POST, Route: pagina/insertCarrito]
+in APPPATH\Controllers\Categoria.php on line 95.
+ 1 APPPATH\Controllers\Categoria.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idProducto', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\Categoria.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->insertCarrito()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:40:05 --> ErrorException: Undefined array key "nombreMueble"
+[Method: GET, Route: pagina/verCarrito]
+in APPPATH\Views\pagina\verCarrito.php on line 20.
+ 1 APPPATH\Views\pagina\verCarrito.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreMueble"', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php', 20)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/verCarrito', [], true)
+ 5 APPPATH\Controllers\Categoria.php(67): view('pagina/verCarrito')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->verCarrito()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 10:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:41:39 --> Error: Call to a member function insert() on null
+[Method: POST, Route: pagina/pagar]
+in APPPATH\Controllers\Categoria.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:50:07 --> Error: Call to a member function insert() on null
+[Method: POST, Route: pagina/pagar]
+in APPPATH\Controllers\Categoria.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:51:25 --> Error: Call to a member function insert() on null
+[Method: POST, Route: pagina/pagar]
+in APPPATH\Controllers\Categoria.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:53:01 --> Error: Call to a member function insert() on null
+[Method: POST, Route: pagina/pagar]
+in APPPATH\Controllers\Categoria.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:54:53 --> Error: Call to a member function insert() on null
+[Method: POST, Route: pagina/pagar]
+in APPPATH\Controllers\Categoria.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 10:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 10:55:17 --> Error: Call to a member function insert() on null
+[Method: POST, Route: pagina/pagar]
+in APPPATH\Controllers\Categoria.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 13:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 13:41:02 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: pagina/verCarrito]
+in APPPATH\Views\pagina\verCarrito.php on line 16.
+ 1 APPPATH\Views\pagina\verCarrito.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/verCarrito', [], true)
+ 5 APPPATH\Controllers\Categoria.php(67): view('pagina/verCarrito')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->verCarrito()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 13:49:19 --> ErrorException: Undefined property: stdClass::$imagen
+[Method: GET, Route: pagina]
+in APPPATH\Views\pagina\listaProductos.php on line 68.
+ 1 APPPATH\Views\pagina\listaProductos.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$imagen', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\listaProductos.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/listaProductos', [], true)
+ 5 APPPATH\Controllers\Categoria.php(20): view('pagina/listaProductos')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->Index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 14:08:30 --> Error: Class "App\Controllers\MueblesM" not found
+[Method: GET, Route: busqueda]
+in APPPATH\Controllers\BusquedaController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BusquedaController->buscar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BusquedaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 14:10:41 --> Error: Class "App\Models\MueblesModel" not found
+[Method: GET, Route: busqueda]
+in APPPATH\Controllers\BusquedaController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BusquedaController->buscar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BusquedaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 14:11:05 --> Error: Class "App\Controllers\MueblesM" not found
+[Method: GET, Route: busqueda]
+in APPPATH\Controllers\BusquedaController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BusquedaController->buscar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BusquedaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 14:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 14:26:04 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: busqueda]
+in APPPATH\Views\resultados_busqueda.php on line 19.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('resultados_busqueda', [], true)
+ 4 APPPATH\Controllers\BusquedaController.php(20): view('resultados_busqueda', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BusquedaController->buscar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BusquedaController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 14:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:32:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 14:40:16 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: busqueda]
+in APPPATH\Views\resultados_busqueda.php on line 21.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('resultados_busqueda', [], true)
+ 4 APPPATH\Controllers\BusquedaController.php(20): view('resultados_busqueda', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BusquedaController->buscar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BusquedaController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+CRITICAL - 2024-11-28 14:42:18 --> ErrorException: Undefined property: stdClass::$precioM
+[Method: GET, Route: busqueda]
+in APPPATH\Views\resultados_busqueda.php on line 22.
+ 1 APPPATH\Views\resultados_busqueda.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$precioM', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\resultados_busqueda.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\resultados_busqueda.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('resultados_busqueda', [], true)
+ 5 APPPATH\Controllers\BusquedaController.php(20): view('resultados_busqueda', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BusquedaController->buscar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BusquedaController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 14:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 14:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 14:51:08 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: pagina/verCarrito]
+in APPPATH\Views\pagina\verCarrito.php on line 16.
+ 1 APPPATH\Views\pagina\verCarrito.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/verCarrito', [], true)
+ 5 APPPATH\Controllers\Categoria.php(67): view('pagina/verCarrito')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->verCarrito()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 15:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 15:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 15:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 15:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 15:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 15:26:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 15:26:33 --> ErrorException: Undefined array key "nombreMueble"
+[Method: GET, Route: pagina/verCarrito]
+in APPPATH\Views\pagina\verCarrito.php on line 36.
+ 1 APPPATH\Views\pagina\verCarrito.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreMueble"', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/verCarrito', [], true)
+ 5 APPPATH\Controllers\Categoria.php(67): view('pagina/verCarrito')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->verCarrito()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 15:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 15:26:37 --> ErrorException: Undefined array key "nombreM"
+[Method: GET, Route: pagina/verCarrito]
+in APPPATH\Views\pagina\verCarrito.php on line 36.
+ 1 APPPATH\Views\pagina\verCarrito.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreM"', 'C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\muebleria\\app\\Views\\pagina\\verCarrito.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('pagina/verCarrito', [], true)
+ 5 APPPATH\Controllers\Categoria.php(67): view('pagina/verCarrito')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->verCarrito()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 15:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 15:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 15:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 16:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 16:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 16:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 16:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 16:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 16:51:34 --> Error: Call to a member function insert() on null
+[Method: POST, Route: pagina/pagar]
+in APPPATH\Controllers\Categoria.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->pagar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 16:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 17:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-28 17:55:53 --> ErrorException: Undefined variable $idProducto
+[Method: POST, Route: pagina/insertCarrito]
+in APPPATH\Controllers\Categoria.php on line 92.
+ 1 APPPATH\Controllers\Categoria.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idProducto', 'C:\\xampp\\htdocs\\muebleria\\app\\Controllers\\Categoria.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categoria->insertCarrito()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categoria))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\muebleria\\public\\index.php')
+INFO - 2024-11-28 18:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:10:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 18:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 19:07:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 19:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 19:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-28 19:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -10,8 +10,7 @@ class UsuarioC extends Controller{
     protected $helpers = ['form'];
    
    public function index(){
-    return  view('head').
-            
+    return            
      view('Usuario/login');
    }
 
@@ -20,7 +19,7 @@ class UsuarioC extends Controller{
    {
        $usuarioM = model('UsuarioM');
        $data['usu'] = $usuarioM->findAll();
-       return view('head') .
+       return 
        view ('menu') .
        view ('Administrador/Show' ,$data) .
        view ('footer');
@@ -51,7 +50,7 @@ class UsuarioC extends Controller{
             case 0:
                 return redirect()->to(base_url('/Administrador'));
             case 1:
-                return redirect()->to(base_url('/categorias'));
+                return redirect()->to(base_url('/Muebles'));
             case 2:
                 return redirect()->to(base_url('/front/Principal'));
             default:
@@ -93,14 +92,14 @@ class UsuarioC extends Controller{
            $usuarioM->set($data)->where('idusuario',$idusuario)->update();
 
            
-           return redirect()->to(base_url('/Clientes'));
+           return redirect()->to(base_url('/Administrador'));
 
        
 }
 
 public function add(){
 
-return view('head') . 
+return 
 view ('menu') . 
 view ('Administrador/Add') . 
 view ('footer');
@@ -110,8 +109,8 @@ view ('footer');
 public function Edit($idUsuario){   //get
     $idUsuario = $data['idUsuario'] = $idUsuario;
     $usuarioM = model('UsuarioM');
-    $data['usu'] = $usuarioM->where('idUsurio',$idUsuario)->findAll();
-    return view('head') .
+    $data['usua'] = $usuarioM->where('idUsuario',$idUsuario)->findAll();
+    return 
     view('menu') . 
     view('Administrador/Edit',$data) .
     view('footer');
@@ -152,7 +151,7 @@ public function insert(){ //post
         if (! $this->validate($rules)) {
             // Si la validación falla, vuelve a cargar la vista con los errores
             return     
-            view('head') .
+        
             view('menu') . 
             view('Administrador/Add',[
                 'validation' => $this->validator
@@ -197,7 +196,7 @@ public function Sesion()
 
     $clienteM = model('ClienteM');
     $data['cliente'] = $clienteM->findAll();
-    return view('head') .
+    return 
             view('menu',$data1) . 
             view('marcas/show', $data) .
             view('footer');

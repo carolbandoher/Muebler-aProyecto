@@ -13,7 +13,7 @@ class MueblesC extends BaseController
     {
         $mueblesM = model('MueblesM');
         $data['Mue'] = $mueblesM->findAll();
-        return view('head') .
+        return 
         view ('menu') .
         view ('Muebles/Show' ,$data) .
         view ('footer');
@@ -42,7 +42,7 @@ class MueblesC extends BaseController
 
         $clienteM = model('ClienteM');
         $data['cliente'] = $clienteM->findAll();
-        return view('head') .
+        return 
                 view('menu',$data1) . 
                 view('marcas/show', $data) .
                 view('footer');
@@ -72,7 +72,7 @@ class MueblesC extends BaseController
     
     public function add(){
 
-    return view('head') . 
+    return 
     view ('menu') . 
     view ('Muebles/Add') . 
     view ('footer');
@@ -83,7 +83,7 @@ class MueblesC extends BaseController
         $idMueble = $data['idMueble'] = $idMueble;
         $muebleM = model('MueblesM');
         $data['Mue'] = $muebleM->where('idMueble',$idMueble)->findAll();
-        return view('head') .
+        return 
         view('menu') . 
         view('Muebles/Edit',$data) .
         view('footer');
@@ -120,7 +120,7 @@ class MueblesC extends BaseController
             if (! $this->validate($rules)) {
                 // Si la validación falla, vuelve a cargar la vista con los errores
                 return     
-                view('head') .
+               
                 view('menu') . 
                 view('Muebles/Add',[
                     'validation' => $this->validator

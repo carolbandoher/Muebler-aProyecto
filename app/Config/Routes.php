@@ -77,8 +77,10 @@ $routes->post('/Compras/update/','CompraC::update/');
 //Rutas front
 
 $routes->get('/front/Principal', 'PrincipalC::Front');
+$routes->get('/Acerca', 'PrincipalC::Acercade');
 
 
+//Rutas Admin ;)
 $routes->get('/Administrador','UsuarioC::index2');
 $routes->get('/Administrador/Add','UsuarioC::add');
 $routes->post('/Administrador/insert','UsuarioC::insert');
@@ -86,3 +88,34 @@ $routes->get('/Administrador/delete/(:num)','UsuarioC::delete/$1');
 
 $routes->get('/Administrador/Edit/(:num)','UsuarioC::Edit/$1');
 $routes->post('/Administrador/update/','UsuarioC::update/');
+
+//Rutas Carrito :0
+$routes->get('/', 'Home::index');
+$routes->get('/pagina/producto/(:num)','Categoria::Producto/$1');
+$routes->get('/pagina','Categoria::Index');
+$routes->get('/pagina/login','Categoria::Logueo');
+
+
+$routes->get('/pagina','Categoria::listaproductos');
+$routes->get('/pagina/verCarrito','Categoria::verCarrito');
+
+$routes->post('/pagina/validaUsuario','Categoria::validaUsuario');
+$routes->get('/pagina/validaUsuario','Categoria::validaUsuario');
+
+
+
+
+$routes->get('/pagina/salir','Categoria::salir');
+
+$routes->get('/pagina/pagar','Categoria::pagar');
+
+
+$routes->get('/pagina/insertCarrito','Categoria::insertCarrito');
+$routes->post('/pagina/insertCarrito','Categoria::insertCarrito');
+
+$routes->get('/pagina/pagar','Categoria::pagar');
+$routes->post('/pagina/pagar','Categoria::pagar');
+
+//Buscador 
+$routes->get('busqueda', 'BusquedaController::buscar');
+
